@@ -3,3 +3,26 @@
   text-align: center;
   background-color: green;
 }
+
+/* line 8, ../../sass/style.scss */
+h2 {
+  text-align: center;
+}
+
+/* line 21, ../../sass/style.scss */
+a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 2em;
+  color: #444;
+  background-color: #00e600;
+}
+
+/* line 26, ../../sass/style.scss */
+a:hover {
+  text-decoration: none;
+  text-align: center;
+  font-size: 2em;
+  color: #444;
+  background-color: lime;
+}

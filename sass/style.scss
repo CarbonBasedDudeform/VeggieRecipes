@@ -4,3 +4,26 @@ $mainColour: green;
   text-align: center;
   background-color: $mainColour;
 }
+
+h2 {
+  text-align: center;
+}
+
+$linkFontColour: #444;
+@mixin link(){
+  text-decoration: none;
+  text-align: center;
+  font-size: 2em;
+  color: $linkFontColour;
+}
+
+$linkColour: $mainColour * 1.8;
+a {
+  @include link();
+  background-color: $linkColour;
+}
+
+a:hover {
+  @include link();
+  background-color: $linkColour * 1.8;
+}

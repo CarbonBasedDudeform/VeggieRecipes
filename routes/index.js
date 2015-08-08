@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
+var mongodb = require('mongodb');
 var recipeModel = require('../models/recipe');
 
 var defaultContent = function() {
@@ -11,8 +12,8 @@ var defaultContent = function() {
   return {
     title: "Recipes",
     recipes: JSON.stringify(recipeModel.getIngrediants())
-  }
-}
+  };
+};
 
 /* GET home page. */
 router.get('/', function(req, res, next) {

@@ -5,4 +5,9 @@ html
     link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css")
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
+    #container.header.col-lg-12
+      h1= title
+    nav.col-lg-12
+      a(href="/create/recipe").col-lg-6 Create New Recipe
+      a(href="/").col-lg-6 View Recipes
     block content
