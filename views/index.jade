@@ -2,7 +2,10 @@ extends layout
 
 block content
   #container.body.col-lg-12
-    p Welcome to #{title}
+    p Welcome to #{title} the Jungle
 
   #container.content.col-sm-12.col-md-12.col-lg-12
-    p #{recipes}
+    each recipe in recipes
+      p #{recipe.title} test
+      each ingrediant in recipe.ingrediants
+        p #{ingrediant.name} : #{ingrediant.quantity}

@@ -1,11 +1,18 @@
-var title = "Recipe";
-var ingrediants = {};
-exports.addIngrediant = function(name, amount) {
-  // ingrediants.push({name, amount});
-  ingrediants[name] = amount;
+var Recipe = function(title)
+{
+  this.title = title;
+  this.ingrediants = {};
+}
+
+Recipe.prototype.title = "Recipe";
+
+Recipe.prototype.addIngrediant = function(called, amount) {
+  this.ingrediants[called] = {name: called, quantity: amount};
 };
 
-exports.getIngrediants = function() { return ingrediants; };
-exports.getTitle = function() { return title; };
+Recipe.prototype.getIngrediants = function() { return this.ingrediants; };
+Recipe.prototype.getTitle = function() { return this.title; };
 
-exports.setTitle = function(newTitle) { title = newTitle; };
+Recipe.prototype.setTitle = function(newTitle) { this.title = newTitle; };
+
+module.exports = Recipe;

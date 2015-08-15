@@ -5,14 +5,13 @@ var mongodb = require('mongodb');
 var recipeModel = require('../models/recipe');
 
 var defaultContent = function() {
-  recipeModel.addIngrediant("almonds", 10.0);
-  console.log(recipeModel.getIngrediants());
-  recipeModel.setTitle("Almonds");
+  var rec = new recipeModel('almondia');
+  rec.addIngrediant("almonds", 10.0);
 
-  return {
-    title: "Recipes",
-    recipes: JSON.stringify(recipeModel.getIngrediants())
-  };
+  var recipesArray = [];
+  recipesArray.push(rec);
+
+  return {title: "Your Recipes", recipes: recipesArray};
 };
 
 /* GET home page. */
