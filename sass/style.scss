@@ -27,3 +27,8 @@ a:hover {
   @include link();
   background-color: $linkColour * 1.8;
 }
+
+body {
+  text-align: center;
+  float: left;
+}

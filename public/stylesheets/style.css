@@ -26,3 +26,9 @@ a:hover {
   color: #444;
   background-color: lime;
 }
+
+/* line 31, ../../sass/style.scss */
+body {
+  text-align: center;
+  float: left;
+}

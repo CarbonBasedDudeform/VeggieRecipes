@@ -5,8 +5,11 @@ var mongodb = require('mongodb');
 var recipeModel = require('../models/recipe');
 
 var defaultContent = function() {
-  var rec = new recipeModel('almondia');
-  rec.addIngrediant("almonds", 10.0);
+  var rec = new recipeModel('Create Your Own Recipes And See Them Here');
+  rec.addIngrediant("Creativity", 1.0);
+  rec.addIngrediant("Taste", 2.0);
+  rec.addIngrediant("Skill", 1.0);
+  rec.addIngrediant("Desire for delicious food", 10.0);
 
   var recipesArray = [];
   recipesArray.push(rec);
