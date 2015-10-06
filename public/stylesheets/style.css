@@ -27,8 +27,29 @@ a:hover {
   background-color: lime;
 }
 
-/* line 31, ../../sass/style.scss */
+/* line 39, ../../sass/style.scss */
 body {
   text-align: center;
+  float: left;
+  background-color: #6fcfc3;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 46, ../../sass/style.scss */
+footer {
+  background-color: #6fcfc3;
+  width: 100%;
+}
+
+/* line 51, ../../sass/style.scss */
+footer img {
+  width: 100%;
+}
+
+/* line 55, ../../sass/style.scss */
+footer #tree {
+  width: 25%;
   float: left;
 }

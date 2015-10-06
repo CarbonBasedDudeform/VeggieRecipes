@@ -28,7 +28,31 @@ a:hover {
   background-color: $linkColour * 1.8;
 }
 
+$backgroundColour: #6fcfc3;
+
+@mixin fullscreenMode(){
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
 body {
   text-align: center;
+  float: left;
+  background-color: $backgroundColour;
+  @include fullscreenMode();
+}
+
+footer {
+  background-color: $backgroundColour;
+  width: 100%;
+}
+
+footer img {
+  width: 100%;
+}
+
+footer #tree{
+  width:25%;
   float: left;
 }

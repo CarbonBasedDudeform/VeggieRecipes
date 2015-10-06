@@ -1,10 +1,10 @@
 extends layout
 
 block content
-  #container.body.col-lg-12
+  header.container-fluid.body.col-lg-12
     p Welcome to #{title} the Jungle
 
-  #container.content.col-sm-12.col-md-12.col-lg-12
+  #recipes.container.content.col-sm-12.col-md-12.col-lg-12
     each recipe in recipes
       #recipe.col-sm-4
         p #{recipe.title}

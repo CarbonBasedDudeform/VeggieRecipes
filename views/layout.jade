@@ -4,10 +4,15 @@ html
     title= title
     link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css")
     link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    #container.header.col-lg-12
-      h1= title
-    nav.container
-      a(href="/create/recipe").col-lg-6 Create New Recipe
-      a(href="/").col-lg-6 View Recipes
-    block content
+  #holy.grail
+    block body.container
+      header.header.col-lg-12
+        h1= title
+      nav
+        a(href="/create/recipe").col-lg-6 Create New Recipe
+        a(href="/").col-lg-6 View Recipes
+      block content
+
+    footer
+      img(src="/images/tree.png")#tree
+      img(src="/images/footer.jpg")
