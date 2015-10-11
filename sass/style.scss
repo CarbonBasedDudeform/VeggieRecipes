@@ -1,3 +1,5 @@
+@import "compass//css3";
+
 $mainColour: green;
 
 .header {
@@ -41,6 +43,23 @@ body {
   float: left;
   background-color: $backgroundColour;
   @include fullscreenMode();
+}
+
+.recipe {
+  @include border-radius(1em, 1em);
+  background-color: $backgroundColour * 1.8;
+}
+
+$titleColour: #44cc44;
+.recipeTitle {
+  @include border-radius(1em, 1em);
+  background-color: $titleColour;
+  margin: 0.5em;
+}
+
+.recipeBody {
+  @include border-radius(1em, 1em);
+  background-color: white;
 }
 
 footer {

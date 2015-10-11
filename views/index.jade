@@ -6,7 +6,8 @@ block content
 
   #recipes.container.content.col-sm-12.col-md-12.col-lg-12
     each recipe in recipes
-      #recipe.col-sm-4
-        p #{recipe.title}
-          each ingrediant in recipe.ingrediants
-            p #{ingrediant.name} : #{ingrediant.quantity}
+      #recipe.recipe.col-sm-4
+        p.recipeTitle #{recipe.title}
+          #recipe_body.recipeBody
+            each ingrediant in recipe.ingrediants
+              p #{ingrediant.name} : #{ingrediant.quantity}
