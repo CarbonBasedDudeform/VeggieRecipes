@@ -1,3 +1,4 @@
+var templateHtml = "<input type='text' />"
 function OnAddIngrediantClick() {
-  ingrediants += 1;
+    $("#ingrediantList").append(templateHtml);
 }

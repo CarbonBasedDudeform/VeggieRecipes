@@ -1,12 +1,12 @@
 extends ../layout
 
 block content
-  script(src='node_modules/angular/angular.js')
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
   script(src='/scripts/recipe_controller.js')
 
   header.body.content.col-lg-12
     h2 Create your recipe
 
-    p.col-lg-12 Ingrediants List
-      each ingrediant in ingrediants
-        button(onClick="OnAddIngrediantClick()") test
+    p#ingrediantList.col-lg-12 Ingrediants List
+    
+    button(onClick="OnAddIngrediantClick()") Add an Ingrediant
