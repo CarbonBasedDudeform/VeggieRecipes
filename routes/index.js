@@ -2,6 +2,8 @@ var express = require('express');
 var router = express.Router();
 
 var mongodb = require('mongodb');
+
+//custom models
 var recipeModel = require('../models/recipe');
 
 var defaultContent = function() {

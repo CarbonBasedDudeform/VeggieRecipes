@@ -2,11 +2,14 @@ extends ../layout
 
 block content
   script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
+  script(src='/models/exception.js')
   script(src='/scripts/recipe_controller.js')
+  link(rel='stylesheet', href='/stylesheets/create.css')
 
   header.body.content.col-lg-12
     h2 Create your recipe
+    p.col-lg-12 Ingrediants List
+    p#ingrediantList.col-lg-12
 
-    p#ingrediantList.col-lg-12 Ingrediants List
-    
     button(onClick="OnAddIngrediantClick()") Add an Ingrediant
+    button(onClick="OnSubmitClick()") Add Recipe
