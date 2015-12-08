@@ -38,5 +38,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask('default', ['jshint', 'compass', 'shell:launchServer']);
+  grunt.registerTask('noserver', ['jshint', 'compass']);
 
 };
