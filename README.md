@@ -27,4 +27,4 @@ Then install the projects dependences by running:
 Finally, start the server by running:
 ```grunt```
 
-Open a browser and navigate to ```http://127.0.0.1:3000/``` to witness the site in all its glory.
+Open a browser and navigate to http://127.0.0.1:3000/ to witness the site in all its glory.
