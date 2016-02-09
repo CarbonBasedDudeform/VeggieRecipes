@@ -24,4 +24,8 @@ router.get('/', function(req, res, next) {
   res.render('index', defaultContent());
 });
 
+router.get('/error', function(req, res, next) {
+  res.render('error', {message: req.msg, error: {status: 'testt', stack:'testest'}});
+});
+
 module.exports = router;
