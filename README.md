@@ -24,6 +24,9 @@ This should create a folder called VeggieRecipes under the current working direc
 Then install the projects dependences by running:
 ```npm install```
 
+Install grunt if you haven't already by running:
+```npm install -g grunt```
+
 Finally, start the server by running: ```grunt```
 
 Open a browser and navigate to http://127.0.0.1:3000/ to witness the site in all its glory.
