@@ -1,4 +1,4 @@
-@import "compass//css3";
+//@import "compass//css3";
 
 $mainColour: green;
 
@@ -19,7 +19,7 @@ $linkFontColour: #444;
   color: $linkFontColour;
 }
 
-$linkColour: $mainColour * 1.8;
+$linkColour: $mainColour;
 a {
   @include link();
   background-color: $linkColour;
@@ -27,7 +27,7 @@ a {
 
 a:hover {
   @include link();
-  background-color: $linkColour * 1.8;
+  background-color: $linkColour;
 }
 
 $backgroundColour: #6fcfc3;
@@ -46,19 +46,19 @@ body {
 }
 
 .recipe {
-  @include border-radius(1em, 1em);
+  //@include border-radius(1em, 1em);
   background-color: $backgroundColour * 1.8;
 }
 
 $titleColour: #44cc44;
 .recipeTitle {
-  @include border-radius(1em, 1em);
+  //@include border-radius(1em, 1em);
   background-color: $titleColour;
   margin: 0.5em;
 }
 
 .recipeBody {
-  @include border-radius(1em, 1em);
+  //@include border-radius(1em, 1em);
   background-color: white;
 }
 

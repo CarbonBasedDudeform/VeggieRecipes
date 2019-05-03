@@ -1,3 +1,5 @@
+var sass = require('node-sass');
+
 module.exports = function(grunt) {
 
   grunt.initConfig({
@@ -9,13 +11,12 @@ module.exports = function(grunt) {
         }
       }
     },
-    compass: {
+    sass: {
 			dist: {
-				options: {
-					sassDir: 'sass',
-					cssDir: 'public/stylesheets'
-				}
-			}
+				files: {
+          'public/stylesheets/style.css' : 'sass/style.scss'
+        }
+      }
 		},
     shell: {
       launchServer: {
@@ -27,17 +28,17 @@ module.exports = function(grunt) {
       tasks: ['jshint'],
       css: {
 				files: '**/*.scss',
-				tasks: ['compass']
+				tasks: ['grunt-sass']
 			}
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-contrib-watch');
-
-  grunt.registerTask('default', ['jshint', 'compass', 'shell:launchServer']);
-  grunt.registerTask('noserver', ['jshint', 'compass']);
+  grunt.loadNpmTasks('grunt-sass');
+  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.registerTask('default', ['jshint', 'sass', 'shell:launchServer']);
+  grunt.registerTask('noserver', ['jshint', 'sass']);
 
 };
