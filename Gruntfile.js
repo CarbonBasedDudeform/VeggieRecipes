@@ -16,6 +16,9 @@ module.exports = function(grunt) {
 				files: {
           'public/stylesheets/style.css' : 'sass/style.scss'
         }
+      },
+      options: {
+        implementation: sass
       }
 		},
     shell: {
@@ -37,7 +40,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-sass');
-  grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.registerTask('default', ['jshint', 'sass', 'shell:launchServer']);
   grunt.registerTask('noserver', ['jshint', 'sass']);
 
