@@ -21,15 +21,17 @@ a:hover {
 
 body {
   text-align: center;
-  float: left;
   background-color: #dff;
+  margin: auto;
   margin: 0;
   width: 100%;
   height: 100%; }
 
 .recipe {
   border-radius: 1em;
-  background-color: rgba(221, 255, 221, 0.5); }
+  background-color: rgba(221, 255, 221, 0.5);
+  margin: 0.5em;
+  width: 20em; }
 
 .recipeTitle {
   border-radius: 1em;

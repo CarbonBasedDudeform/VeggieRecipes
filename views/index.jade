@@ -4,9 +4,9 @@ block content
   header.container-fluid.body.col-lg-12
     p Welcome to #{title} the Jungle
 
-  #recipes.container.content.col-sm-12.col-md-12.col-lg-12
+  #recipes.col-sm-12.center-block
     each recipe in recipes
-      #recipe.recipe.col-sm-4
+      #recipe.recipe.col-sm-3
         p.recipeTitle #{recipe.title}
           #recipe_body.recipeBody
             each ingrediant in recipe.ingrediants

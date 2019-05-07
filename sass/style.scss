@@ -40,14 +40,16 @@ $backgroundColour: #dff;
 
 body {
   text-align: center;
-  float: left;
   background-color: $backgroundColour;
+  margin: auto;
   @include fullscreenMode();
 }
 
-.recipe {
+.recipe { 
   border-radius: 1em;
   background-color: rgba($mainColour, 0.5);
+  margin: 0.5em;
+  width: 20em;
 }
 
 $titleColour: rgba(darken($mainColour, 50%), 0.2);
