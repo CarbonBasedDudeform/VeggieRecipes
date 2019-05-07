@@ -1,6 +1,6 @@
 //@import "compass//css3";
 
-$mainColour: green;
+$mainColour: #dfd;
 
 .header {
   text-align: center;
@@ -30,7 +30,7 @@ a:hover {
   background-color: $linkColour;
 }
 
-$backgroundColour: #6fcfc3;
+$backgroundColour: #dff;
 
 @mixin fullscreenMode(){
   margin: 0;
@@ -46,20 +46,21 @@ body {
 }
 
 .recipe {
-  //@include border-radius(1em, 1em);
-  background-color: $backgroundColour * 1.8;
+  border-radius: 1em;
+  background-color: rgba($mainColour, 0.5);
 }
 
-$titleColour: #44cc44;
+$titleColour: rgba(darken($mainColour, 50%), 0.2);
 .recipeTitle {
-  //@include border-radius(1em, 1em);
+  border-radius: 1em;
   background-color: $titleColour;
   margin: 0.5em;
 }
 
 .recipeBody {
-  //@include border-radius(1em, 1em);
-  background-color: white;
+  border-radius: 1em;
+  text-align: left;
+  background-color: rgba(white, 0.6);
 }
 
 footer {

@@ -26,6 +26,11 @@ var defaultContent = function() {
 
   var recipesArray = [];
   recipesArray.push(rec);
+  recipesArray.push(rec);
+  recipesArray.push(rec);
+  recipesArray.push(rec);
+  recipesArray.push(rec);
+  recipesArray.push(rec);
 
   return {title: "Your Recipes", recipes: recipesArray};
 };

@@ -27,8 +27,8 @@ module.exports = function(grunt) {
       files: ['<%= jshint.files %>'],
       tasks: ['jshint'],
       css: {
-				files: '**/*.scss',
-				tasks: ['grunt-sass']
+				files: 'sass/*.scss',
+				tasks: ['sass']
 			}
     }
   });
